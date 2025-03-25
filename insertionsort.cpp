@@ -33,19 +33,20 @@ void input()
 
 void insertionSort()
 {
-    int temp;
-    int j, i;
-    for (i = 1; i <= n - 1; i++)
+   int temp;
+   int i, j;
+
+   for (i = 1; i <= n - 1; i++)
+   {
+    temp = Arr[i];
+    j = i - 1;
+    while (j >= 0 && Arr[j] > temp)
     {
-        temp = Arr(i);
-        j = i - 1;
-        while (j>= 0 && Arr[j] > temp)
-        {
-            Arr[j + 1] = Arr[j];
-            j--;
-        }
-        Arr[j + 1] = temp;
+        Arr[j + 1] = Arr[j];
+        j--;
     }
+    Arr[j + 1] = temp;
+   }
 }
 
 void display()
