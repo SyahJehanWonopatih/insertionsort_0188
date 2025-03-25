@@ -47,3 +47,20 @@ void insertionSort()
         Arr[j + 1] = temp;
     }
 }
+
+void display()
+{
+    cout << endl;
+    cout << "======================" << endl;
+    cout << "total pass = " << n - 1 << endl;
+    cout << "======================" << endl;
+    cout << "Element Array yang telah teersusun " << endl;
+    cout << " ======================" << endl;
+
+    for (int j = 0; j < n; j++)
+    {
+        cout << Arr[j] << endl;
+    }
+        cout << endl;
+
+}
