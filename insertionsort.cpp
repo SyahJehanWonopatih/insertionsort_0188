@@ -64,3 +64,11 @@ void display()
         cout << endl;
 
 }
+int masin()
+{
+    input();
+    insertionSort();
+    display();
+    system("pause");
+    return 0;
+}
